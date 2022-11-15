@@ -6,7 +6,7 @@ let additionResult
 console.log(userInput, computerRandom,);
 
 // verifica se ci sono i requisiti per il gioco
-if (!Number.isNaN(userInput) && (pariODisapari === 'pari' || pariODisapari === 'dispari')) {
+if (!Number.isNaN(userInput) && (pariODisapari === 'pari' || pariODisapari === 'dispari') && userInput < 5 && userInput > 1) {
     additionResult = addition(userInput, computerRandom);
     winner(additionResult);
 } else {
